@@ -5,26 +5,30 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ taglib prefix="rapid" uri="http://www.rapid-framework.org.cn/rapid" %>
 
-    <rapid:override name="title">
-        - 添加链接
-    </rapid:override>
+<rapid:override name="title">
+    - 添加链接
+</rapid:override>
 <rapid:override name="header-style">
     <style>
         /*覆盖 layui*/
         .layui-input-block {
-            margin:0px 10px;
+            margin: 0px 10px;
         }
+
         .layui-table {
             margin-top: 0;
         }
+
         .layui-col-md4 {
-            padding:10px;
+            padding: 10px;
         }
+
         .layui-col-md8 {
-            padding:10px;
+            padding: 10px;
         }
+
         .layui-btn {
-            margin: 2px 0!important;
+            margin: 2px 0 !important;
         }
     </style>
 </rapid:override>
@@ -59,18 +63,19 @@
                     <br>
                     <div class="layui-input-block">
                         联系方式
-                        <input type="text" name="linkOwnerContact" value="" autocomplete="off" class="layui-input" >
+                        <input type="text" name="linkOwnerContact" value="" autocomplete="off" class="layui-input">
                     </div>
                     <br>
                     <div class="layui-input-block">
                         描述
-                        <input type="text" name="linkDescription" value="" autocomplete="off" class="layui-input" >
+                        <input type="text" name="linkDescription" value="" autocomplete="off" class="layui-input">
                     </div>
 
                     <br>
                     <div class="layui-input-block">
-                         Order
-                        <input type="number" name="linkOrder" value="" autocomplete="off" class="layui-input" min="0" max="10">
+                        Order
+                        <input type="number" name="linkOrder" value="" autocomplete="off" class="layui-input" min="0"
+                               max="10">
                     </div>
                     <br>
                     <div class="layui-input-block">
@@ -81,13 +86,13 @@
             <blockquote class="layui-elem-quote layui-quote-nm">
                 温馨提示：
                 <ul>
-                    <li>URL：如 http://liuyanzhao.com</li>
+                    <li>URL：如 http://baidu.com</li>
                     <li>Order：默认是0，Order越大排名越靠前</li>
                 </ul>
             </blockquote>
         </div>
         <div class="layui-col-md8">
-            <table class="layui-table" >
+            <table class="layui-table">
                 <colgroup>
                     <col width="50">
                     <col width="300">
@@ -110,17 +115,18 @@
                     <tr>
                         <td>${l.linkId}</td>
                         <td>
-                            ${l.linkName}
+                                ${l.linkName}
                         </td>
                         <td>
-                             ${l.linkUrl}
+                                ${l.linkUrl}
                         </td>
                         <td>
-                            ${l.linkOrder}
+                                ${l.linkOrder}
                         </td>
                         <td>
                             <a href="/admin/link/edit/${l.linkId}" class="layui-btn layui-btn-mini">编辑</a>
-                            <a href="/admin/link/delete/${l.linkId}" class="layui-btn layui-btn-danger layui-btn-mini" onclick="return confirmDelete()">删除</a>
+                            <a href="/admin/link/delete/${l.linkId}" class="layui-btn layui-btn-danger layui-btn-mini"
+                               onclick="return confirmDelete()">删除</a>
 
                         </td>
                     </tr>
@@ -132,10 +138,6 @@
     </div>
 
 
-
-
-
-
 </rapid:override>
 <rapid:override name="footer-script">
     <script>
@@ -143,4 +145,4 @@
     </script>
 </rapid:override>
 
-<%@ include file="../Public/framework.jsp"%>
+<%@ include file="../Public/framework.jsp" %>

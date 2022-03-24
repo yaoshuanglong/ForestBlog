@@ -41,6 +41,13 @@ public class IndexController {
     @Autowired
     private CommentService commentService;
 
+    /**
+     * 获取首页各部分的数据
+     * @param pageIndex
+     * @param pageSize
+     * @param model
+     * @return
+     */
     @RequestMapping(value = {"/", "/article"})
     public String index(@RequestParam(required = false, defaultValue = "1") Integer pageIndex,
                         @RequestParam(required = false, defaultValue = "10") Integer pageSize, Model model) {

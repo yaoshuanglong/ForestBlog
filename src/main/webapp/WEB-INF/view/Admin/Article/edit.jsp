@@ -95,12 +95,13 @@
             <div class="layui-input-inline">
                 <div class="layui-upload">
                     <div class="layui-upload-list" style="">
-                        <img class="layui-upload-img"  id="demo1" width="100" src="${article.articleThumbnail}"
+                        <img class="layui-upload-img" id="demo1" width="100" src="${article.articleThumbnail}"
                              height="100">
                         <p id="demoText"></p>
                     </div>
                     <button type="button" class="layui-btn" id="test1">上传图片</button>
-                    <input type="hidden" name="articleThumbnail" id="articleThumbnail" value="${article.articleThumbnail}" >
+                    <input type="hidden" name="articleThumbnail" id="articleThumbnail"
+                           value="${article.articleThumbnail}">
                 </div>
             </div>
         </div>

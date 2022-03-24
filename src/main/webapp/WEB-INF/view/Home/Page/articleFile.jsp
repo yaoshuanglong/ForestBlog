@@ -17,6 +17,10 @@
     <title>文章归档--${options.optionSiteTitle}</title>
 </rapid:override>
 
+<%--
+文章归档页面
+--%>
+
 <rapid:override name="breadcrumb">
     <%--面包屑导航 start--%>
     <nav class="breadcrumb">

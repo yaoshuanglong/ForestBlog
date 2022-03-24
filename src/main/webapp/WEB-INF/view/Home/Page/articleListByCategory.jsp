@@ -15,6 +15,10 @@
     <title>${category.categoryName}</title>
 </rapid:override>
 
+<%--
+根据分类查询文章页面
+--%>
+
 <%--面包屑导航 start--%>
 <rapid:override name="breadcrumb">
     <nav class="breadcrumb">

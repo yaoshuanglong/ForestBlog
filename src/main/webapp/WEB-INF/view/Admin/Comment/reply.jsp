@@ -31,7 +31,7 @@
         </span>
     </blockquote>
 
-    <form class="layui-form"  method="post" id="myForm" action="/admin/comment/replySubmit">
+    <form class="layui-form" method="post" id="myForm" action="/admin/comment/replySubmit">
         <input type="hidden" name="commentPid" value="${comment.commentId}">
         <input type="hidden" name="commentPname" value="${comment.commentAuthorName}">
         <input type="hidden" name="commentArticleId" value="${comment.commentArticleId}">
@@ -39,21 +39,21 @@
         <div class="layui-form-item layui-form-text">
             <label class="layui-form-label">原内容</label>
             <div class="layui-input-block">
-                <textarea  class="layui-textarea" disabled>${comment.commentContent}</textarea>
+                <textarea class="layui-textarea" disabled>${comment.commentContent}</textarea>
             </div>
         </div>
 
         <div class="layui-form-item layui-form-text">
             <label class="layui-form-label">我的回复</label>
             <div class="layui-input-block">
-                <textarea name="commentContent"  class="layui-textarea"></textarea>
+                <textarea name="commentContent" class="layui-textarea"></textarea>
             </div>
         </div>
 
         <div class="layui-form-item">
             <div class="layui-input-block">
                 <button class="layui-btn" lay-submit="" lay-filter="demo1">回复</button>
-                <button type="reset" class="layui-btn layui-btn-primary" >重置</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
             </div>
         </div>
 

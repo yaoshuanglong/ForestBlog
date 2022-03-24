@@ -59,7 +59,7 @@
         <div class="layui-form-item">
             <label class="layui-form-label">密码 <span style="color: #FF5722; ">*</span></label>
             <div class="layui-input-inline">
-                <input type="password" name="userPass"  id="userPass" required
+                <input type="password" name="userPass" id="userPass" required
                        lay-verify="userPass"
                        autocomplete="off" class="layui-input" min="3" max="20">
             </div>
@@ -68,7 +68,7 @@
         <div class="layui-form-item">
             <label class="layui-form-label">昵称 <span style="color: #FF5722; ">*</span></label>
             <div class="layui-input-inline">
-                <input type="text" name="userNickname"  required
+                <input type="text" name="userNickname" required
                        placeholder="" autocomplete="off" min="2" max="10"
                        class="layui-input">
             </div>
@@ -86,7 +86,7 @@
         <div class="layui-form-item">
             <label class="layui-form-label">URL </label>
             <div class="layui-input-inline">
-                <input type="url" name="userUrl"  placeholder=""
+                <input type="url" name="userUrl" placeholder=""
                        class="layui-input">
             </div>
         </div>

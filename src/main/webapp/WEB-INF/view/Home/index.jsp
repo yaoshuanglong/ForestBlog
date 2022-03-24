@@ -5,7 +5,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ taglib prefix="rapid" uri="http://www.rapid-framework.org.cn/rapid" %>
 
-
+<%--滚动的标题公告--%>
 <rapid:override name="breadcrumb">
     <nav class="breadcrumb">
         <div class="bull"><i class="fa fa-volume-up"></i></div>
@@ -32,12 +32,14 @@
                 <article class="post type-post">
 
                     <figure class="thumbnail">
+                            <%--图片--%>
                         <a href="/article/${a.articleId}">
                             <img width="280" height="210"
                                  src="${a.articleThumbnail}"
                                  class="attachment-content size-content wp-post-image"
                                  alt="${a.articleTitle}">
                         </a>
+                            <%--图片左上分类--%>
                         <span class="cat">
                                 <a href="/category/${a.categoryList[a.categoryList.size()-1].categoryId}">
                                         ${a.categoryList[a.categoryList.size()-1].categoryName}
@@ -45,6 +47,7 @@
                             </span>
                     </figure>
 
+                        <%--标题--%>
                     <header class="entry-header">
                         <h2 class="entry-title">
                             <a href="/article/${a.articleId}"
@@ -54,11 +57,14 @@
                         </h2>
                     </header>
 
+                        <%--简要信息--%>
                     <div class="entry-content">
+                            <%--内容--%>
                         <div class="archive-content">
                                 ${a.articleSummary}...
                         </div>
                         <span class="title-l"></span>
+                            <%--判断是否为近七天的新文章--%>
                         <span class="new-icon">
                             <c:choose>
                                 <c:when test="${a.articleStatus == 2}">
@@ -74,6 +80,7 @@
                                 </c:otherwise>
                             </c:choose>
                         </span>
+                            <%--时间、浏览数、评论数--%>
                         <span class="entry-meta">
                             <span class="date">
                                 <fmt:formatDate value="${a.articleCreateTime}" pattern="yyyy年MM月dd日"/>
@@ -110,6 +117,7 @@
                 </article>
             </c:forEach>
         </main>
+            <%--分页按钮页面--%>
         <%@ include file="Public/part/paging.jsp" %>
 
     </div>

@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="/plugin/layui/css/layui.css">
 </rapid:override>
 
+<%--
+留言板（外部js和数据）
+--%>
 
 <rapid:override name="breadcrumb">
     <%--面包屑导航 start--%>
@@ -37,14 +40,15 @@
             <article class="post" style="min-height: 500px;">
                 <header class="entry-header">
                     <h1 class="entry-title">
-                           留言板
+                        留言板
                     </h1>
                 </header><!-- .entry-header -->
                 <div class="entry-content">
                     <div class="single-content">
                         <!--PC版-->
                         <div id="SOHUCS" sid="message"></div>
-                        <script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+                        <script charset="utf-8" type="text/javascript"
+                                src="https://changyan.sohu.com/upload/changyan.js"></script>
                         <script type="text/javascript">
                             window.changyan.api.config({
                                 appid: 'cytcdBHan',
@@ -74,7 +78,6 @@
             </article><!-- #post -->
 
 
-
         </main>
         <!-- .site-main -->
     </div>
@@ -99,12 +102,12 @@
                     if (value.length > 12 || value.length < 4) {
                         return "用户名必须4到12位";
                     }
-                    if(checkUserName()==1) {
+                    if (checkUserName() == 1) {
                         return "用户名已存在";
                     }
                 },
                 userEmail: function () {
-                    if(checkUserEmail()==1) {
+                    if (checkUserEmail() == 1) {
                         return "电子邮箱已存在";
                     }
                 }

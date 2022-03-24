@@ -15,6 +15,10 @@
     <title>${category.categoryName}</title>
 </rapid:override>
 
+<%--
+根据标签查询文章
+--%>
+
 <%--面包屑导航 start--%>
 <rapid:override name="breadcrumb">
     <nav class="breadcrumb">
@@ -70,7 +74,7 @@
 
                             <div class="entry-content">
                                 <div class="archive-content">
-                                   ${a.articleSummary}...
+                                        ${a.articleSummary}...
                                 </div>
                                 <span class="title-l"></span>
                                 <span class="new-icon">
