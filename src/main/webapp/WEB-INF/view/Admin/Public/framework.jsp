@@ -149,8 +149,7 @@
 
     <div class="layui-footer">
         <!-- 底部固定区域 -->
-        © <a href="http://blog.liuyanzhao.com">Jay博客</a> 2022 <a href="https://liuyanzhao.com/shop.html"
-                                                                 target="_blank">有偿服务</a>
+        © <a href="/">Jay博客</a> 2022
     </div>
 </div>
 
